@@ -4,14 +4,14 @@
     "name": "Legalcode"
   },
   "metadata": {
-    "description": "Legalcode plugins for Claude Code, including hosted Legalcode MCP access and curated legal skills.",
+    "description": "Legalcode plugins for Claude Code, including hosted Legalcode MCP access and 50 public legal skills.",
     "version": "0.1.0"
   },
   "plugins": [
     {
       "name": "legalcode-claude-code",
       "source": "./plugins/legalcode-claude-code",
-      "description": "Free Legalcode skills and public Legalcode MCP access for Claude Code",
+      "description": "50 public Legalcode skills and public Legalcode MCP access for Claude Code",
       "version": "0.1.0",
       "author": {
         "name": "Legalcode"
@@ -23,7 +23,7 @@
     {
       "name": "legalcode-pro-claude-code",
       "source": "./plugins/legalcode-pro-claude-code",
-      "description": "Legalcode Pro MCP access, legal skills, and CLI install helper for Claude Code",
+      "description": "Authenticated Legalcode MCP access, the same 50 public legal skills, and CLI install helper for Claude Code",
       "version": "0.1.0",
       "author": {
         "name": "Legalcode"

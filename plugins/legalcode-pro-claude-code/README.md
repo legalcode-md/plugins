@@ -1,19 +1,21 @@
-# Legalcode Pro Claude Code Plugin
+# Legalcode Authenticated Claude Code Plugin
 
-Pro Legalcode plugin bundle for Claude Code.
+Authenticated Legalcode plugin bundle for Claude Code.
 
 Includes:
 
-- Pro Legalcode MCP endpoint: `https://mcppro.legalcode.md/mcp`
-- 10 Legalcode skills for setup, public/pro search, contract review, privacy, legal research, litigation chronology, and tabular review
+- Authenticated Legalcode MCP endpoint: `https://mcppro.legalcode.md/mcp`
+- 50 public Legalcode skills for setup, source search, legal work orchestration, contract workflows, privacy, compliance, corporate transactions, litigation chronology, and tabular review
 - CLI install helper at `scripts/install-legalcode-cli.sh`
 
 Install from the marketplace after this repo is public:
 
 ```text
-/plugin marketplace add RobertHH-IS/legalcode-plugin
+/plugin marketplace add legalcode-md/plugins
 /plugin install legalcode-pro-claude-code@legalcode
 ```
+
+This variant includes the same public skills as `legalcode-claude-code`; the difference is the authenticated MCP endpoint and CLI helper.
 
 The CLI helper runs:
 

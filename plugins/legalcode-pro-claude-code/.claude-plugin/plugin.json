@@ -1,7 +1,7 @@
 {
   "name": "legalcode-pro-claude-code",
   "version": "0.1.0",
-  "description": "Legalcode Pro for Claude Code with Pro MCP access, 10 legal skills, and CLI install helper.",
+  "description": "Legalcode authenticated endpoint for Claude Code with 50 public legal skills and CLI install helper.",
   "author": {
     "name": "Legalcode"
   },

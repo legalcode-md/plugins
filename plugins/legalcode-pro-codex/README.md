@@ -1,12 +1,14 @@
-# Legalcode Pro Codex Plugin
+# Legalcode Authenticated Codex Plugin
 
-Pro Legalcode plugin bundle for Codex.
+Authenticated Legalcode plugin bundle for Codex.
 
 Includes:
 
-- Pro Legalcode MCP endpoint: `https://mcppro.legalcode.md/mcp`
-- 10 Legalcode skills for setup, public/pro search, contract review, privacy, legal research, litigation chronology, and tabular review
+- Authenticated Legalcode MCP endpoint: `https://mcppro.legalcode.md/mcp`
+- 50 public Legalcode skills for setup, source search, legal work orchestration, contract workflows, privacy, compliance, corporate transactions, litigation chronology, and tabular review
 - CLI install helper at `scripts/install-legalcode-cli.sh`
+
+This variant includes the same public skills as `legalcode-codex`; the difference is the authenticated MCP endpoint and CLI helper.
 
 The CLI helper runs:
 
