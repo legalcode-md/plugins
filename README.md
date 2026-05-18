@@ -12,8 +12,8 @@ Website: https://legalcode.md
 |---|---|---|---:|---|
 | `legalcode-codex` | Codex | Public MCP | 50 | No |
 | `legalcode-claude-code` | Claude Code | Public MCP | 50 | No |
-| `legalcode-pro-codex` | Codex | Authenticated MCP | 50 | Install helper |
-| `legalcode-pro-claude-code` | Claude Code | Authenticated MCP | 50 | Install helper |
+| `legalcode-pro-codex` | Codex | Authenticated MCP | 50 | Pro auth required |
+| `legalcode-pro-claude-code` | Claude Code | Authenticated MCP | 50 | Pro auth required |
 
 ## Included Public Skills
 
@@ -72,21 +72,24 @@ For the authenticated endpoint variant:
 /plugin install legalcode-pro-claude-code@legalcode
 ```
 
-## Authenticated Variant CLI Helper
+## Pro CLI Helper
 
-The authenticated endpoint variants include:
+The CLI is only for Legalcode Pro users and requires OAuth login. The authenticated
+endpoint variants include:
 
 ```text
 scripts/install-legalcode-cli.sh
 ```
 
-That helper runs:
+That helper installs the CLI from npm and starts login:
 
 ```bash
 npm install -g legalcode
+legalcode login
 ```
 
-The npm package must be published separately before this command works for external users.
+The `legalcode` npm package must be published before external users can install
+the CLI this way.
 
 ## Notes
 
