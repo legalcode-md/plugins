@@ -1,6 +1,6 @@
 {
   "name": "legalcode-pro-codex",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Legalcode authenticated endpoint for Codex with 52 legal skills (50 public + Icelandic gold-plating analysis + DOCX renderer) and CLI install helper.",
   "author": {
     "name": "Legalcode",

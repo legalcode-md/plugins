@@ -1,12 +1,8 @@
 {
   "name": "legalcode-pro-claude-code",
-  "version": "0.3.0",
-  "description": "Legalcode authenticated endpoint for Claude Code with 52 legal skills (50 public + Icelandic gold-plating analysis + DOCX renderer) and CLI install helper.",
+  "version": "0.3.1",
+  "description": "Legalcode authenticated MCP for Claude Code with 52 legal skills including Icelandic gold-plating analysis and a self-contained DOCX renderer.",
   "author": {
     "name": "Legalcode"
-  },
-  "homepage": "https://legalcode.md",
-  "keywords": ["legal", "claude-code", "mcp", "contracts", "compliance", "pro"],
-  "skills": "./skills/",
-  "mcpServers": "./.mcp.json"
+  }
 }

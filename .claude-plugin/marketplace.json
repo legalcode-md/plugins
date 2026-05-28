@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Legalcode Pro marketplace — authenticated Legalcode MCP access and 52 legal skills (including Icelandic gold-plating analysis and a self-contained DOCX renderer) for Claude Code.",
-    "version": "0.3.0"
+    "version": "0.3.1"
   },
   "plugins": [
     {
       "name": "legalcode-pro-claude-code",
       "source": "./plugins/legalcode-pro-claude-code",
       "description": "Authenticated Legalcode MCP access, 52 legal skills (incl. Icelandic gold-plating analysis and DOCX renderer), and CLI install helper for Claude Code",
-      "version": "0.3.0",
+      "version": "0.3.1",
       "author": {
         "name": "Legalcode"
       },
