@@ -1,25 +1,20 @@
 ---
 name: legalcode-services-agreement-drafter
 description: >
-  Draft and review standalone commercial services agreements for defined-scope engagements
-  — fixed-price projects, time-and-materials assignments, milestone-based delivery,
-  and hybrid fee structures. Covers scope of work and deliverable specification, change
-  control, fees and payment (including acceptance testing, disputed invoices, and audit
-  rights), intellectual property ownership and licensing (background/foreground IP,
-  assignment formalities, license-back, moral rights), professional and fitness-for-purpose
-  warranties, limitation of liability, indemnification (IP, data breach, gross negligence),
-  data protection obligations, subcontracting controls, termination (cause, convenience,
-  insolvency), and transition/wind-down assistance. Use when drafting or reviewing a
-  single-document services agreement for a specific project or discrete engagement — as
-  distinct from a two-tier Master Services Agreement / Statement of Work framework. Suitable
-  for consulting, IT delivery, creative services, advisory, research, engineering, and any
-  professional services engagement where scope, timeline, and deliverables are defined in
-  a single instrument. Jurisdiction-agnostic with localization markers for US, UK, AU, and EU.
-  Produces confidence-scored, auditable drafts or redlines with Glass Box audit trail.
+  Draft and review standalone commercial services agreements for defined-scope
+  engagements — fixed-price projects, time-and-materials assignments,
+  milestone-based delivery, and hybrid fee structures. Covers scope of work and
+  deliverable specification, change control, fees and payment (including
+  acceptance testing, disputed invoices, and audit rights), intellectual property
+  ownership and licensing (background/foreground IP, assignment formalities,
+  license-back, moral rights), professional and fitness-for-purpose warranties,
+  limitation of liability, indemnification (IP, data breach, gross negligence),
+  data protection obligations, subcontracting controls, termination (cause,
+  convenience, insolvency), and transition/wind-down assistance. Use when drafting
+  or reviewing a single-document services agreement for a specific project or
+  discrete engagement — as distinct from a two-tier Master Services Agreement /
+  Statement of Work framework.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Services Agreement Drafter

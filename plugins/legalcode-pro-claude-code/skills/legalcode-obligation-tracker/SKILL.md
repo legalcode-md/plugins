@@ -8,9 +8,6 @@ description: >
   escalation pathways, and confidence-scored outputs. Supports single-contract and
   portfolio modes, jurisdiction-agnostic with [JURISDICTION-SPECIFIC] markers.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Obligation Tracker

@@ -3,37 +3,12 @@ name: legalcode-eu-directive-analyzer
 description: >
   Extracts a versioned, machine-readable obligation register from any EU directive
   identified by CELEX or supplied as text. The register is the foundation artefact
-  consumed by every other skill in the seven-skill EU Legislative Compliance suite:
-  the per-Member-State implementation matrix, the Commission-format correlation table,
-  the per-article conformity verdict, the gold-plating detector, the EEA Joint Committee
-  Decision tracker, and the TFEU 258/260 infringement procedure tracker. For each
-  operative provision the skill emits one row carrying the article reference, the
-  deontic operator (must / shall / may / shall-not / should), the addressee (Member
-  State / national competent authority / private actor / EU institution / individual),
-  the compliance deadline (transposition deadline first, then ongoing application
-  dates and review-clause dates), a Member-State-option flag where the directive grants
-  national discretion, recital cross-references, IATE-aligned key terms in all 24
-  authentic language versions, and a citation chain from CELEX through the European
-  Legislation Identifier (ELI) URI down to article, paragraph, and sentence. Worked
-  examples are drawn from NIS2 (Directive (EU) 2022/2555, CELEX 32022L2555), AI Act
-  (Regulation (EU) 2024/1689, CELEX 32024R1689 — used for contrast), CSRD (Directive
-  (EU) 2022/2464, CELEX 32022L2464), CSDDD (Directive (EU) 2024/1760, CELEX 32024L1760),
-  GDPR (Regulation (EU) 2016/679, CELEX 32016R0679 — for contrast), and DORA (Regulation
-  (EU) 2022/2554). Anchored in TFEU Art. 288 (instrument hierarchy) and TFEU Art. 4(3)
-  (sincere cooperation, the textual foundation of the transposition obligation), with
-  CJEU doctrine on direct effect (Becker C-8/81; Marshall C-152/84; Faccini Dori
-  C-91/92) and consistent interpretation (Von Colson C-14/83; Marleasing C-106/89).
-  Outputs are emitted in four formats — Markdown (human review), JSON (canonical
-  machine schema consumed by sibling skills), Akoma Ntoso AKN4EU XML (round-trip to
-  LEOS), and LegalRuleML (round-trip to policy-as-code engines). Operating modes:
-  fresh-extract, update-existing, EEA-scope, contested-language-version. Personas:
-  government / EU institution, legal firm, company, trade federation. Jurisdictional
-  scope: EU-27 plus the three EEA-EFTA states (Iceland, Liechtenstein, Norway) where
-  the directive is incorporated into the EEA Annexes by Joint Committee Decision.
+  consumed by every other skill in the seven-skill EU Legislative Compliance
+  suite: the per-Member-State implementation matrix, the Commission-format
+  correlation table, the per-article conformity verdict, the gold-plating
+  detector, the EEA Joint Committee Decision tracker, and the TFEU 258/260
+  infringement procedure tracker.
 allowed-tools: Read, Write, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode EU Directive Analyzer

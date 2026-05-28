@@ -8,9 +8,6 @@ description: >
   track-changes workflows and clause-by-clause redline strategy under jurisdiction-
   agnostic guidance with localization markers.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Redline Generator

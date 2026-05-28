@@ -14,9 +14,6 @@ description: >
   "closing conditions", "post-closing integration risk", or "diligence executive summary".
   Jurisdiction-agnostic with markers for US, UK, and EU variants.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Due Diligence Report

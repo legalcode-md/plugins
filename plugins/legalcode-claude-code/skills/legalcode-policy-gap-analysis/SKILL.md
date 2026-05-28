@@ -2,37 +2,18 @@
 name: legalcode-policy-gap-analysis
 description: >
   Compares organizational policies and procedures against applicable regulatory
-  requirements, industry standards, and best practices to identify gaps, conflicts,
-  and areas requiring update. Builds a complete policy inventory; maps required
-  policies across privacy (GDPR Arts. 5/24/32/33/35, CCPA/CPRA, LGPD, DPDP Act 2023,
-  PIPL), cybersecurity (NIS2 Directive 2022/2555 Art. 21, ISO 27001:2022, NIST CSF 2.0,
-  HIPAA Security Rule 45 C.F.R. Part 164, DORA Reg. 2022/2554), financial crime
-  (BSA 31 U.S.C. §5318(h), FATF 40 Recommendations, EU AMLR 2024/1624), anti-corruption
-  (FCPA 15 U.S.C. §78dd-1, UK Bribery Act 2010 s.7, OECD Convention), financial
-  reporting (SOX §302/§404/§806, SEC whistleblower Rule 21F), employment/labor
-  (FLSA, NLRA, EU Platform Work Directive, FTC non-compete vacatur landscape), and
-  ESG/supply chain (UK Modern Slavery Act 2015 s.54, German LkSG, EU CSDDD Directive
-  2024/1760). Evaluates each policy across seven adequacy dimensions: existence,
-  currency, completeness, specificity, accessibility, training integration, and
-  enforcement/attestation. Identifies three gap types: (1) required policies that are
-  entirely absent, (2) existing policies with materially inadequate coverage or outdated
-  provisions, and (3) policies conflicting with current regulatory requirements.
-  Quantifies gaps using a 5×5 inherent risk matrix, five-level design-vs-operational
-  effectiveness model, and residual risk formula with design-execution gap multiplier.
-  Classifies gaps as CRITICAL/HIGH/MEDIUM/LOW with remediation owners, timelines, and
-  success metrics. Supports eight operating modes: annual enterprise assessment, focused
-  domain assessment, pre-regulatory examination preparation, M&A policy diligence,
-  ISO 37301/ISO 27001 certification preparation, post-incident root cause analysis,
-  board governance review, and regulatory change impact assessment. Produces policy gap
-  register, domain heat map (policy area × jurisdiction), prioritized remediation
-  roadmap (IMMEDIATE/NEAR-TERM/BACKGROUND tiers), board governance accountability
-  assessment, and Glass Box audit trail. Jurisdiction-agnostic core with
-  [JURISDICTION-SPECIFIC] markers for US, EU, UK, Australia, Canada, Brazil, India,
-  and Singapore.
+  requirements, industry standards, and best practices to identify gaps,
+  conflicts, and areas requiring update. Builds a complete policy inventory; maps
+  required policies across privacy (GDPR Arts. 5/24/32/33/35, CCPA/CPRA, LGPD,
+  DPDP Act 2023, PIPL), cybersecurity (NIS2 Directive 2022/2555 Art. 21, ISO
+  27001:2022, NIST CSF 2.0, HIPAA Security Rule 45 C.F.R. Part 164, DORA Reg.
+  2022/2554), financial crime (BSA 31 U.S.C. §5318(h), FATF 40 Recommendations, EU
+  AMLR 2024/1624), anti-corruption (FCPA 15 U.S.C. §78dd-1, UK Bribery Act 2010
+  s.7, OECD Convention), financial reporting (SOX §302/§404/§806, SEC
+  whistleblower Rule 21F), employment/labor (FLSA, NLRA, EU Platform Work
+  Directive, FTC non-compete vacatur landscape), and ESG/supply chain (UK Modern
+  Slavery Act 2015 s.54, German LkSG, EU CSDDD Directive 2024/1760).
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Policy Gap Analysis

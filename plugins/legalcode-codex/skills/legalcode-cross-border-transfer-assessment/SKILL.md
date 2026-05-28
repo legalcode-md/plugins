@@ -12,9 +12,6 @@ description: >
   selection decision, TIA, supplementary measures catalogue, risk classification
   (LAWFUL/RESTRICTED/UNLAWFUL per transfer), remediation roadmap, and Glass Box audit trail.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Cross-Border Transfer Assessment

@@ -7,9 +7,6 @@ description: >
   or remediating policy gaps found during audits, enforcement readiness checks, or
   incident-driven policy refreshes.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Privacy Policy Drafter

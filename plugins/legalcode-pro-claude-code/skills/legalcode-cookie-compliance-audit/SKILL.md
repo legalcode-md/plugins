@@ -13,9 +13,6 @@ description: >
   or digital platform for cookie consent compliance, preparing for supervisory authority review,
   or assessing a consent management platform (CMP) implementation.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Cookie Compliance Audit

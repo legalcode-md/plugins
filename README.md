@@ -12,14 +12,21 @@ Website: https://legalcode.md
 |---|---|---|---:|---|
 | `legalcode-codex` | Codex | Public MCP | 50 | No |
 | `legalcode-claude-code` | Claude Code | Public MCP | 50 | No |
-| `legalcode-pro-codex` | Codex | Authenticated MCP | 50 | Pro auth required |
-| `legalcode-pro-claude-code` | Claude Code | Authenticated MCP | 50 | Pro auth required |
+| `legalcode-pro-codex` | Codex | Authenticated MCP | 52 | Pro auth required |
+| `legalcode-pro-claude-code` | Claude Code | Authenticated MCP | 52 | Pro auth required |
 
 ## Included Public Skills
 
-Each plugin includes the same 50 public Legalcode skills. The authenticated variants only change the MCP endpoint and optional CLI helper; they do not hide or unlock extra plugin skills. Subscriber-only skills are delivered through the Legalcode Pro dashboard, not this public plugin repository.
+Each plugin includes the same 50 public Legalcode skills. The authenticated variants change the MCP endpoint, add the CLI helper, and ship two Pro-only skills that depend on the authenticated MCP's pre-law and case-law trace surfaces. Subscriber-only skills are delivered through the Legalcode Pro dashboard, not this public plugin repository.
 
 The public bundle covers MCP setup, legal source search, legal work orchestration workflows, contract review and drafting, privacy and compliance, corporate transactions, citation-backed tabular review, and case timeline generation. Supporting `references/`, `scripts/`, templates, and agent files are copied alongside each skill where used.
+
+## Additional Pro-only Skills
+
+The authenticated variants (`legalcode-pro-codex` and `legalcode-pro-claude-code`) bundle these two additional skills, bringing the Pro skill count from 50 to 52:
+
+- `legalcode-anti-gold-plating-is` — Icelandic gold-plating (gullhúðun) analysis for EEA-implementation acts. Section-by-section detection of *innleiðing umfram lágmark*, traced through the Alþingi pre-law record (frumvarp, greinargerð, umsagnir, nefndarálit, breytingartillögur) with per-finding impact retrieval via targeted MCP searches. Applies the Davidson Five + Pattern G30 framework, runs Iron Law 7 counter-argument stress tests on every HIGH/CRITICAL finding, and produces a full *Gullhúðunarskýrsla* plus an optional remediation *breytingafrumvarp* — both rendered as standalone Word documents. Requires the authenticated MCP's pre-law and case-law trace surfaces.
+- `legalcode-docx-render` — Self-contained DOCX renderer with Icelandic legal typography (Arial 10pt body, sized headings, 1-inch margins), thin horizontal borders between table rows, and a mandatory standalone-document audit so the output opens in Word, LibreOffice, or Pages with zero update prompts. Pandoc-backed with a Python post-render helper for table-border injection. Acts as the rendering back end for `legalcode-anti-gold-plating-is` but works as a general-purpose Icelandic-legal DOCX renderer for any markdown source.
 
 ## Public vs Pro
 

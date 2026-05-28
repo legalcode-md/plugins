@@ -1,23 +1,18 @@
 ---
 name: legalcode-terms-of-service-drafter
 description: >
-  Draft and review Terms of Service agreements for SaaS, web, and mobile platforms —
-  generate jurisdiction-compliant terms covering account eligibility, acceptable use,
-  user-generated content licensing, intellectual property, subscription and billing,
-  auto-renewal disclosure, limitation of liability, dispute resolution, and governing law.
-  Use when drafting consumer-facing or B2B platform terms, auditing existing TOS for
-  regulatory compliance gaps, updating TOS for new regulatory requirements (DSA, DMA,
-  UK DMCCA, AU unfair terms, US auto-renewal laws), creating B2B vs B2C variants, or
-  generating jurisdiction-specific supplements for EU, UK, AU, CA, and US. Covers COPPA
-  age gating, CAN-SPAM email compliance, DMCA safe harbor conditions, FTC Section 5
-  unfair practices, Section 230 platform immunity conditions, DSA Arts. 14-27 platform
-  transparency requirements, Consumer Rights Directive withdrawal rights, ACL unfair terms
-  civil penalties, CASL express consent, and arbitration/class action waiver enforceability.
-  Produces structured, confidence-scored drafting guidance with Glass Box audit trail.
+  Draft and review Terms of Service agreements for SaaS, web, and mobile platforms
+  — generate jurisdiction-compliant terms covering account eligibility, acceptable
+  use, user-generated content licensing, intellectual property, subscription and
+  billing, auto-renewal disclosure, limitation of liability, dispute resolution,
+  and governing law. Use when drafting consumer-facing or B2B platform terms,
+  auditing existing TOS for regulatory compliance gaps, updating TOS for new
+  regulatory requirements (DSA, DMA, UK DMCCA, AU unfair terms, US auto-renewal
+  laws), creating B2B vs B2C variants, or generating jurisdiction-specific
+  supplements for EU, UK, AU, CA, and US. Covers COPPA age gating, CAN-SPAM email
+  compliance, DMCA safe harbor conditions, FTC Section 5 unfair practices, Section
+  230 platform immunity conditions, DSA Arts.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Terms of Service Drafter

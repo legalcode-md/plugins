@@ -1,28 +1,20 @@
 ---
 name: legalcode-data-processing-agreement-drafter
 description: >
-  Draft Data Processing Agreements (DPAs) from scratch for controller-to-processor,
-  controller-to-controller (joint), and processor-to-sub-processor relationships.
-  Produces GDPR Article 28-compliant, UK GDPR, CCPA/CPRA service provider, Brazil LGPD,
-  and India DPDP Act-aligned DPA clauses and full agreements with jurisdiction-specific
-  annexes. Covers subject matter and duration, processing instructions and scope
-  limitations, data categories and data subject types, controller/processor obligations,
-  sub-processor management and notification mechanisms, technical and organizational
-  security measures (TOMs), data breach notification SLAs, data subject rights
-  assistance, DPIA and prior consultation support, international data transfer
-  mechanisms (EU SCCs 2021, UK IDTA, adequacy decisions, BCRs), audit and inspection
-  rights, data return and deletion on termination, and liability allocation.
-  Includes EU, UK, Brazil LGPD, and India DPDP annexes. Use when creating a new DPA
-  from scratch, generating a DPA template for a vendor program, building sub-processor
-  flow-down agreements, adding a DPA addendum to a master services agreement, drafting
-  multi-jurisdiction DPAs for SaaS platforms, or designing a DPA program across
-  multiple processing relationships and regimes. Supports both controller-side and
-  processor-side drafting with dual-perspective clause options and negotiation
-  guidance. Jurisdiction-agnostic baseline with multi-regime modular annexes.
+  Draft Data Processing Agreements (DPAs) from scratch for
+  controller-to-processor, controller-to-controller (joint), and
+  processor-to-sub-processor relationships. Produces GDPR Article 28-compliant, UK
+  GDPR, CCPA/CPRA service provider, Brazil LGPD, and India DPDP Act-aligned DPA
+  clauses and full agreements with jurisdiction-specific annexes. Covers subject
+  matter and duration, processing instructions and scope limitations, data
+  categories and data subject types, controller/processor obligations,
+  sub-processor management and notification mechanisms, technical and
+  organizational security measures (TOMs), data breach notification SLAs, data
+  subject rights assistance, DPIA and prior consultation support, international
+  data transfer mechanisms (EU SCCs 2021, UK IDTA, adequacy decisions, BCRs),
+  audit and inspection rights, data return and deletion on termination, and
+  liability allocation. Includes EU, UK, Brazil LGPD, and India DPDP annexes.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode DPA Drafter

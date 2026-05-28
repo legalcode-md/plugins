@@ -1,6 +1,6 @@
 {
   "name": "legalcode-claude-code",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Legalcode for Claude Code with public Legalcode MCP access and 50 public legal skills.",
   "author": {
     "name": "Legalcode"

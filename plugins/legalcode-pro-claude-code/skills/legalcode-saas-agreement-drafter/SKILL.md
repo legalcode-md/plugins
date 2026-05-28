@@ -10,9 +10,6 @@ description: >
   or exit assistance terms. Covers B2B, B2C, and B2B2C models. Jurisdiction-agnostic with
   localization markers for US, EU, UK, and AU. Produces structured guidance with Glass Box audit trail.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode SaaS Agreement Drafter

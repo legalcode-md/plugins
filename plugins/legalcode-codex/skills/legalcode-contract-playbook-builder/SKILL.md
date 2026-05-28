@@ -8,9 +8,6 @@ description: >
   terms, partner agreements, and other commercial contracts at scale. Supports green/yellow/
   red/black positioning, clause-library governance, and auditable decision trails.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Contract Playbook Builder

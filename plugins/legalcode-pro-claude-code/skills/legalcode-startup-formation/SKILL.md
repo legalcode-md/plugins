@@ -12,9 +12,6 @@ description: >
   15620; California Labor Code § 2870; DTSA immunity notice. Validates the complete
   formation package against VC due diligence standards and common founder mistake patterns.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Startup Formation

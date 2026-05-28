@@ -7,9 +7,6 @@ description: >
   reviewing counterparty markups, renewal amendments, template drift, procurement paper,
   M&A diligence batches, or any scenario requiring defensible contract delta analysis.
 allowed-tools: Read, Bash(grep:*), Glob, WebSearch, WebFetch
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode Contract Comparison

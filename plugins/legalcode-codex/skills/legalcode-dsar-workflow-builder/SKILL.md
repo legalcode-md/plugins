@@ -13,9 +13,6 @@ description: >
   from any individual, managing backlog of open requests, building a DSAR process program,
   or auditing an existing DSAR response for defensibility.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-5-20251101
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode DSAR Workflow Builder

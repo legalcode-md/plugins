@@ -12,9 +12,6 @@ description: >
   export hooks. Produces both summary and detailed ROPA formats with completeness
   scoring and prioritized remediation.
 allowed-tools: Read, Bash(grep:*), Glob
-model: claude-opus-4-6
-context: fork
-agent: general-purpose
 ---
 
 # Legalcode ROPA Generator

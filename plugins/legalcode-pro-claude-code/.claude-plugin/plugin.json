@@ -1,7 +1,7 @@
 {
   "name": "legalcode-pro-claude-code",
-  "version": "0.1.0",
-  "description": "Legalcode authenticated endpoint for Claude Code with 50 public legal skills and CLI install helper.",
+  "version": "0.2.0",
+  "description": "Legalcode authenticated endpoint for Claude Code with 52 legal skills (50 public + Icelandic gold-plating analysis + DOCX renderer) and CLI install helper.",
   "author": {
     "name": "Legalcode"
   },
