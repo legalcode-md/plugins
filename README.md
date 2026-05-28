@@ -2,7 +2,7 @@
 
 Pro plugin distribution for Legalcode.
 
-Legalcode gives AI agents primary legal source lookup and reusable legal workflows. This repository ships the Pro plugin bundles for Codex and Claude Code, backed by Legalcode's authenticated MCP endpoint and including 52 curated legal skills.
+Legalcode gives AI agents primary legal source lookup and reusable legal workflows. This repository ships the Pro plugin bundles for Codex and Claude Code, backed by Legalcode's authenticated MCP endpoint and including 50 curated legal skills.
 
 Website: https://legalcode.md
 
@@ -10,10 +10,10 @@ Website: https://legalcode.md
 
 | Plugin | Target | MCP endpoint | Skills | CLI |
 |---|---|---|---:|---|
-| `legalcode-pro-codex` | Codex | Authenticated MCP | 52 | Pro auth required |
-| `legalcode-pro-claude-code` | Claude Code | Authenticated MCP | 52 | Pro auth required |
+| `legalcode-pro-codex` | Codex | Authenticated MCP | 50 | Pro auth required |
+| `legalcode-pro-claude-code` | Claude Code | Authenticated MCP | 50 | Pro auth required |
 
-Both plugins ship the same 52 skills and point at the authenticated Legalcode MCP. Free / public-MCP plugin variants are not distributed from this repository — installing any plugin here gives you the Pro tier.
+Both plugins ship the same 50 skills and point at the authenticated Legalcode MCP. Free / public-MCP plugin variants are not distributed from this repository — installing any plugin here gives you the Pro tier.
 
 ## Authenticated MCP endpoint
 
@@ -21,11 +21,11 @@ Both plugins ship the same 52 skills and point at the authenticated Legalcode MC
 https://mcppro.legalcode.md/mcp
 ```
 
-Use this endpoint for stronger search, AND/OR search, up to 20 results per query, guidance, agreements, downloads, the pre-law and case-law trace surfaces that the Icelandic gold-plating skill depends on, and higher-throughput authenticated access. On first invocation Cowork or Claude Code will prompt you to authorise the connection (OAuth).
+Use this endpoint for stronger search, AND/OR search, up to 20 results per query, guidance, agreements, downloads, the pre-law and case-law trace surfaces, and higher-throughput authenticated access. On first invocation Cowork or Claude Code will prompt you to authorise the connection (OAuth).
 
 ## Included Skills
 
-All 52 skills ship in both Pro variants. The skill set covers:
+All 50 skills ship in both Pro variants. The skill set covers:
 
 - **Foundation**: MCP setup, public/authenticated source search, legal work orchestration workflows
 - **Contracts**: review, drafting, comparison, redlining, playbook building, NDA triage, SaaS / MSA / DPA / services / terms-of-service drafters, indemnification analysis, limitation-of-liability review, SAFE review, term sheet analysis
@@ -34,11 +34,8 @@ All 52 skills ship in both Pro variants. The skill set covers:
 - **Corporate transactions**: due diligence report, third-party due diligence, startup formation
 - **Regulatory & policy**: EU directive analyzer, regulatory change tracker, policy gap analysis, obligation tracker
 - **Document workflow**: document QA, tabular review (with orchestrator), statute analysis, case timeline (builder + generator), legal memorandum
-- **Icelandic legal specialty** (Pro-only, requires authenticated MCP):
-  - `legalcode-anti-gold-plating-is` — Icelandic gold-plating (gullhúðun) analysis for EEA-implementation acts. Section-by-section detection of *innleiðing umfram lágmark*, traced through the Alþingi pre-law record (frumvarp, greinargerð, umsagnir, nefndarálit, breytingartillögur) with per-finding impact retrieval. Applies the Davidson Five + Pattern G30 framework, runs Iron Law 7 counter-argument stress tests on every HIGH/CRITICAL finding, and produces a full *Gullhúðunarskýrsla* plus an optional remediation *breytingafrumvarp* — both rendered as standalone Word documents.
-  - `legalcode-docx-render` — Self-contained DOCX renderer with Icelandic legal typography (Arial 10pt body, sized headings, 1-inch margins), thin horizontal borders between table rows, and a mandatory standalone-document audit so the output opens in Word, LibreOffice, or Pages with zero update prompts. Pandoc-backed with a Python post-render helper for table-border injection.
 
-Subscriber-only skills beyond these 52 are delivered through the Legalcode Pro dashboard, not this plugin repository.
+Subscriber-only skills beyond these 50 are delivered through the Legalcode Pro dashboard, not this plugin repository.
 
 ## Claude Code install
 
@@ -94,7 +91,7 @@ The `legalcode` npm package must be published for external users to install the 
 
 ## Notes
 
-Your agent keeps your documents and matter context. Legalcode provides source lookup through the authenticated MCP. Skills in this repository are designed to call `legalcode_search`, `legalcode_trace`, `legalcode_fetch`, `legalcode_analyze`, and `legalcode_discover` against the Pro endpoint — they will degrade gracefully if pointed at the public endpoint but several skills (notably `legalcode-anti-gold-plating-is`) depend on Pro-only trace surfaces.
+Your agent keeps your documents and matter context. Legalcode provides source lookup through the authenticated MCP. Skills in this repository are designed to call `legalcode_search`, `legalcode_trace`, `legalcode_fetch`, `legalcode_analyze`, and `legalcode_discover` against the Pro endpoint — they will degrade gracefully if pointed at the public endpoint but several skills depend on Pro-only trace surfaces.
 
 ## Legal disclaimer
 

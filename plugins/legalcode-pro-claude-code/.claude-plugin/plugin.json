@@ -1,7 +1,7 @@
 {
   "name": "legalcode-pro-claude-code",
-  "version": "0.3.1",
-  "description": "Legalcode authenticated MCP for Claude Code with 52 legal skills including Icelandic gold-plating analysis and a self-contained DOCX renderer.",
+  "version": "0.3.2",
+  "description": "Legalcode authenticated MCP for Claude Code with 50 legal skills.",
   "author": {
     "name": "Legalcode"
   }

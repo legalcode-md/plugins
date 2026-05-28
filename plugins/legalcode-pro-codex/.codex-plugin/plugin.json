@@ -1,7 +1,7 @@
 {
   "name": "legalcode-pro-codex",
-  "version": "0.3.1",
-  "description": "Legalcode authenticated endpoint for Codex with 52 legal skills (50 public + Icelandic gold-plating analysis + DOCX renderer) and CLI install helper.",
+  "version": "0.3.2",
+  "description": "Legalcode authenticated endpoint for Codex with 50 legal skills and CLI install helper.",
   "author": {
     "name": "Legalcode",
     "url": "https://legalcode.md"
@@ -13,7 +13,7 @@
   "interface": {
     "displayName": "Legalcode Authenticated",
     "shortDescription": "Authenticated legal research and drafting for Codex",
-    "longDescription": "Bundle the hosted authenticated Legalcode MCP endpoint with 52 Legalcode skills (50 public skills plus Icelandic gold-plating analysis and a self-contained DOCX renderer) and a CLI install helper for stronger search, guidance, agreements, downloads, and authenticated workflows.",
+    "longDescription": "Bundle the hosted authenticated Legalcode MCP endpoint with 50 Legalcode skills and a CLI install helper for stronger search, guidance, agreements, downloads, and authenticated workflows.",
     "developerName": "Legalcode",
     "category": "Productivity",
     "capabilities": ["Read"],
