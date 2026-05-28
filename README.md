@@ -1,8 +1,8 @@
-# Legalcode Plugins
+# Legalcode Pro Plugins
 
-Public plugin distribution for Legalcode.
+Pro plugin distribution for Legalcode.
 
-Legalcode gives AI agents primary legal source lookup and reusable legal workflows. This repository ships public plugin bundles for Codex and Claude Code, including public and authenticated MCP endpoint variants.
+Legalcode gives AI agents primary legal source lookup and reusable legal workflows. This repository ships the Pro plugin bundles for Codex and Claude Code, backed by Legalcode's authenticated MCP endpoint and including 52 curated legal skills.
 
 Website: https://legalcode.md
 
@@ -10,43 +10,58 @@ Website: https://legalcode.md
 
 | Plugin | Target | MCP endpoint | Skills | CLI |
 |---|---|---|---:|---|
-| `legalcode-codex` | Codex | Public MCP | 50 | No |
-| `legalcode-claude-code` | Claude Code | Public MCP | 50 | No |
 | `legalcode-pro-codex` | Codex | Authenticated MCP | 52 | Pro auth required |
 | `legalcode-pro-claude-code` | Claude Code | Authenticated MCP | 52 | Pro auth required |
 
-## Included Public Skills
+Both plugins ship the same 52 skills and point at the authenticated Legalcode MCP. Free / public-MCP plugin variants are not distributed from this repository — installing any plugin here gives you the Pro tier.
 
-Each plugin includes the same 50 public Legalcode skills. The authenticated variants change the MCP endpoint, add the CLI helper, and ship two Pro-only skills that depend on the authenticated MCP's pre-law and case-law trace surfaces. Subscriber-only skills are delivered through the Legalcode Pro dashboard, not this public plugin repository.
-
-The public bundle covers MCP setup, legal source search, legal work orchestration workflows, contract review and drafting, privacy and compliance, corporate transactions, citation-backed tabular review, and case timeline generation. Supporting `references/`, `scripts/`, templates, and agent files are copied alongside each skill where used.
-
-## Additional Pro-only Skills
-
-The authenticated variants (`legalcode-pro-codex` and `legalcode-pro-claude-code`) bundle these two additional skills, bringing the Pro skill count from 50 to 52:
-
-- `legalcode-anti-gold-plating-is` — Icelandic gold-plating (gullhúðun) analysis for EEA-implementation acts. Section-by-section detection of *innleiðing umfram lágmark*, traced through the Alþingi pre-law record (frumvarp, greinargerð, umsagnir, nefndarálit, breytingartillögur) with per-finding impact retrieval via targeted MCP searches. Applies the Davidson Five + Pattern G30 framework, runs Iron Law 7 counter-argument stress tests on every HIGH/CRITICAL finding, and produces a full *Gullhúðunarskýrsla* plus an optional remediation *breytingafrumvarp* — both rendered as standalone Word documents. Requires the authenticated MCP's pre-law and case-law trace surfaces.
-- `legalcode-docx-render` — Self-contained DOCX renderer with Icelandic legal typography (Arial 10pt body, sized headings, 1-inch margins), thin horizontal borders between table rows, and a mandatory standalone-document audit so the output opens in Word, LibreOffice, or Pages with zero update prompts. Pandoc-backed with a Python post-render helper for table-border injection. Acts as the rendering back end for `legalcode-anti-gold-plating-is` but works as a general-purpose Icelandic-legal DOCX renderer for any markdown source.
-
-## Public vs Pro
-
-Public MCP:
-
-```text
-https://mcp.legalcode.md/mcp
-```
-
-Use public MCP for anonymous laws and case law lookup. It is rate limited and returns the top 5 results per query.
-
-Authenticated MCP:
+## Authenticated MCP endpoint
 
 ```text
 https://mcppro.legalcode.md/mcp
 ```
 
-Use authenticated MCP for stronger search, AND/OR search, up to 20 results per query, guidance, agreements, downloads, and higher-throughput access.
+Use this endpoint for stronger search, AND/OR search, up to 20 results per query, guidance, agreements, downloads, the pre-law and case-law trace surfaces that the Icelandic gold-plating skill depends on, and higher-throughput authenticated access. On first invocation Cowork or Claude Code will prompt you to authorise the connection (OAuth).
 
-## Codex Install
+## Included Skills
+
+All 52 skills ship in both Pro variants. The skill set covers:
+
+- **Foundation**: MCP setup, public/authenticated source search, legal work orchestration workflows
+- **Contracts**: review, drafting, comparison, redlining, playbook building, NDA triage, SaaS / MSA / DPA / services / terms-of-service drafters, indemnification analysis, limitation-of-liability review, SAFE review, term sheet analysis
+- **Privacy & data protection**: DPIA generator, RoPA generator, cookie compliance audit, DSAR workflow builder, cross-border transfer assessment, privacy policy drafter, GDPR legal-basis assessment, vendor privacy assessment
+- **Compliance**: NIS2, DORA, AML/KYC, sanctions / export control screening, EU AI Act high-risk, AI governance framework builder, AI provisions reviewer
+- **Corporate transactions**: due diligence report, third-party due diligence, startup formation
+- **Regulatory & policy**: EU directive analyzer, regulatory change tracker, policy gap analysis, obligation tracker
+- **Document workflow**: document QA, tabular review (with orchestrator), statute analysis, case timeline (builder + generator), legal memorandum
+- **Icelandic legal specialty** (Pro-only, requires authenticated MCP):
+  - `legalcode-anti-gold-plating-is` — Icelandic gold-plating (gullhúðun) analysis for EEA-implementation acts. Section-by-section detection of *innleiðing umfram lágmark*, traced through the Alþingi pre-law record (frumvarp, greinargerð, umsagnir, nefndarálit, breytingartillögur) with per-finding impact retrieval. Applies the Davidson Five + Pattern G30 framework, runs Iron Law 7 counter-argument stress tests on every HIGH/CRITICAL finding, and produces a full *Gullhúðunarskýrsla* plus an optional remediation *breytingafrumvarp* — both rendered as standalone Word documents.
+  - `legalcode-docx-render` — Self-contained DOCX renderer with Icelandic legal typography (Arial 10pt body, sized headings, 1-inch margins), thin horizontal borders between table rows, and a mandatory standalone-document audit so the output opens in Word, LibreOffice, or Pages with zero update prompts. Pandoc-backed with a Python post-render helper for table-border injection.
+
+Subscriber-only skills beyond these 52 are delivered through the Legalcode Pro dashboard, not this plugin repository.
+
+## Claude Code install
+
+```text
+/plugin marketplace add legalcode-md/plugins
+/plugin install legalcode-pro-claude-code@legalcode
+```
+
+The plugin auto-registers the authenticated MCP server (`https://mcppro.legalcode.md/mcp`). On first call Claude Code opens an OAuth flow to authorise the connection to your Legalcode Pro account.
+
+## Cowork install
+
+Cowork admins:
+
+```text
+Organization Settings → Plugins → Add plugins → GitHub → legalcode-md/plugins
+```
+
+Cowork performs an initial sync and lists `legalcode-pro-claude-code` in the **Plugins** tab. Set the installation preference (*available for install*, *auto-installed for new users*, or *required*). For private organization use, enable **Sync automatically** so future repository pushes appear without manual action.
+
+Authentication: on first plugin invocation, members see an OAuth prompt to connect their Legalcode Pro account.
+
+## Codex install
 
 Codex uses the repo-local marketplace manifest:
 
@@ -54,35 +69,15 @@ Codex uses the repo-local marketplace manifest:
 .agents/plugins/marketplace.json
 ```
 
-Free plugin path:
-
-```text
-./plugins/legalcode-codex
-```
-
-Authenticated endpoint plugin path:
+Pro plugin path:
 
 ```text
 ./plugins/legalcode-pro-codex
 ```
 
-## Claude Code Install
+## Pro CLI helper
 
-```text
-/plugin marketplace add legalcode-md/plugins
-/plugin install legalcode-claude-code@legalcode
-```
-
-For the authenticated endpoint variant:
-
-```text
-/plugin install legalcode-pro-claude-code@legalcode
-```
-
-## Pro CLI Helper
-
-The CLI is only for Legalcode Pro users and requires OAuth login. The authenticated
-endpoint variants include:
+Both Pro plugins ship a CLI install helper:
 
 ```text
 scripts/install-legalcode-cli.sh
@@ -95,14 +90,13 @@ npm install -g legalcode
 legalcode login
 ```
 
-The `legalcode` npm package must be published before external users can install
-the CLI this way.
+The `legalcode` npm package must be published for external users to install the CLI this way.
 
 ## Notes
 
-Your agent keeps your documents and matter context. Legalcode provides source lookup through MCP.
+Your agent keeps your documents and matter context. Legalcode provides source lookup through the authenticated MCP. Skills in this repository are designed to call `legalcode_search`, `legalcode_trace`, `legalcode_fetch`, `legalcode_analyze`, and `legalcode_discover` against the Pro endpoint — they will degrade gracefully if pointed at the public endpoint but several skills (notably `legalcode-anti-gold-plating-is`) depend on Pro-only trace surfaces.
 
-## Legal Disclaimer
+## Legal disclaimer
 
 These plugins, skills, and support files are provided as-is as agent
 instructions and configuration. They are not legal advice and do not create an
